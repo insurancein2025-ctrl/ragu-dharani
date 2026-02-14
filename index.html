@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>My Valentine ❤️</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+body {
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+.page { 
+width: 100vw;
+ min-height: 100vh; /* 🔥 key change */
+ display: none;
+ justify-content: center; 
+align-items: center;
+ flex-direction: column;
+ text-align: center;
+ padding: 20px;
+ position: relative;
+}
+ /* ---------- PAGE 1 ---------- */ 
+#page1 {
+ display: flex; 
+background: url("couple.jpg") no-repeat center center;
+ background-size: cover; }
+.card { background: white;
+ width: 100%; 
+max-width: 420px;
+ border-radius: 30px;
+ padding: 25px;
+ box-shadow: 0 20px 50px rgba(0,0,0,0.35); 
+animation: pop 1s ease; }
+ .card h1 {
+color: #ff2e63; 
+margin-bottom: 15px; 
+}
+.card p { 
+font-size: 17px;
+ line-height: 1.5; 
+} 
+.buttons { 
+display: flex;
+ gap: 15px;
+ margin-top: 25px;
+ }
+button {
+ flex: 1;
+ padding: 14px;
+ font-size: 18px;
+ border: none;
+ border-radius: 30px; 
+cursor: pointer;
+ }
+#yesBtn {
+ background: #ff2e63;
+ color: white;
+ }
+ #noBtn { 
+background: #ddd; 
+position: relative;
+ }
+/* ---------- PAGE 2 ---------- */
+ #page2 {
+ background: linear-gradient(135deg, #ff9a9e, #fad0c4); 
+}
+ #page2 img {
+ width: 280px;
+ max-width: 90%;
+ border-radius: 22px;
+box-shadow: 0 15px 40px rgba(0,0,0,0.35);
+ margin-bottom: 20px; 
+} 
+ #page2 h1 {
+ font-size: 36px;
+ }
+#page2 p {
+ font-size: 20px;
+ margin: 15px 0;
+ } 
+
+button { 
+flex: 1; 
+padding: 14px;
+ font-size: 18px;
+ border: none;
+ border-radius: 30px;
+ cursor: pointer;
+ }
+/* ---------- PAGE 3 ---------- */
+ #page3 { 
+background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+ }
+ #page3 img {
+ width: 280px;
+ max-width: 90%;
+ border-radius: 22px;
+box-shadow: 0 15px 40px rgba(0,0,0,0.35);
+ margin-bottom: 20px; 
+} 
+  
+#page3 h2 {
+ font-size: 28px;
+ color: #ff2e63; 
+}
+#page3 p {
+ font-size: 18px; 
+margin-top: 12px;
+ line-height: 1.6;
+ }
+ #page4 { 
+background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+ }
+  #page4 img {
+ width: 280px;
+ max-width: 90%;
+ border-radius: 22px;
+box-shadow: 0 15px 40px rgba(0,0,0,0.35);
+ margin-bottom: 20px; 
+} 
+#page4 h2 { 
+font-size: 28px; 
+color: #ff2e63; 
+} 
+#page4 p {
+ font-size: 18px;
+ margin-top: 12px;
+ line-height: 1.6;
+}
+/* ---------- PAGE 5 ---------- */
+ #page5 { 
+background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+ }
+  #page5 img {
+ width: 280px;
+ max-width: 90%;
+ border-radius: 22px;
+box-shadow: 0 15px 40px rgba(0,0,0,0.35);
+ margin-bottom: 20px; 
+} 
+#page5 h2 {
+ font-size: 28px;
+ color: #ff2e63; 
+}
+#page5 p {
+ font-size: 18px; 
+margin-top: 12px;
+ line-height: 1.6;
+ }
+/* ---------- PAGE 6 ---------- */
+ #page6 { 
+background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+ }
+  #page6 img {
+ width: 280px;
+ max-width: 90%;
+ border-radius: 22px;
+box-shadow: 0 15px 40px rgba(0,0,0,0.35);
+ margin-bottom: 20px; 
+} 
+#page6 h2 {
+ font-size: 28px;
+ color: #ff2e63; 
+}
+#page6 p {
+ font-size: 18px; 
+margin-top: 12px;
+ line-height: 1.6;
+ }
+/* ---------- PAGE 7 ---------- */
+ #page7 { 
+background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+ }
+ #page7 img {
+ width: 280px;
+ max-width: 90%;
+ border-radius: 22px;
+box-shadow: 0 15px 40px rgba(0,0,0,0.35);
+ margin-bottom: 20px; 
+} 
+#page7 h2 {
+ font-size: 28px;
+ color: #ff2e63; 
+}
+#page7 p {
+ font-size: 18px; 
+margin-top: 12px;
+ line-height: 1.6;
+ }
+ #page8 { 
+background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+ }
+  #page8 img {
+ width: 280px;
+ max-width: 90%;
+ border-radius: 22px;
+box-shadow: 0 15px 40px rgba(0,0,0,0.35);
+ margin-bottom: 20px; 
+} 
+#page8 h2 { 
+font-size: 28px; 
+color: #ff2e63; 
+} 
+#page8 p {
+ font-size: 18px;
+ margin-top: 12px;
+ line-height: 1.6;
+}
+
+/* ---------- PAGE COMMON ---------- */
+.page {
+    width: 100vw;
+    min-height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+button {
+    padding: 14px 25px;
+    font-size: 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    background: #ff2e63;
+    color: white;
+    margin-top: 30px;
+}
+
+#heartBtn {
+    font-size: 200px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    animation: heartbeat 1s infinite;
+}
+
+/* Heart animation */
+@keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    25% { transform: scale(1.2); }
+    50% { transform: scale(1); }
+    75% { transform: scale(1.2); }
+}
+</style>
+</head>
+<body>
+
+<!-- ---------- WELCOME HEART PAGE ---------- -->
+<div class="page" id="welcomePage" style="display:flex;">
+    <button id="heartBtn" onclick="openValentine()">❤️</button>
+    <p><h1><b>Click the heart to open your Valentine 💖</b></h1></p>
+</div>
+
+<!-- ---------- EXISTING VALENTINE CONTENT ---------- -->
+<div id="valentineContent" style="display:none;">
+
+<!-- ❤️ PAGE 1 -->
+<div class="page" id="page1">
+    <div class="card">
+        <h1>Hey My Love ❤️</h1>
+        <p>
+            From the moment our eyes met, my life took on a new and beautiful meaning<br>
+            I didn’t know it then, but that single look was the start of an extraordinary journey<br>
+            where the world finally began to make sense. It wasn't just attraction;<br>
+            it was as if my soul recognized yours from a lifetime I hadn't lived yet,<br>
+            a quiet warmth that told me I finally belonged.  ✨<br>
+            My heart has a question for you…
+        </p>
+        <p style="margin-top:15px;"><strong>Will you be my Valentine? 💍</strong></p>
+
+        <div class="buttons">
+            <button id="yesBtn" onclick="goPage2()">YES 💖</button>
+            <button id="noBtn" onmouseover="moveNo()">NO 🙈</button>
+        </div>
+    </div>
+</div>
+<!-- 🤗 PAGE 2 --> 
+<div class="page" id="page2"> 
+<h1>🤗🤗🤗</h1>
+ <p> I know I'm your valentine 🤍<br>
+ Let see your memories of those days <br>
+💕 Are you?
+ </p>
+<!-- Hug GIF --> 
+<img src="myimage.jpeg" alt="My Love">
+ <button id="submitBtn" onclick="goPage3()">Yes, I’m ❤️</button>
+ </div>
+<!-- 💖 PAGE 3 --> 
+<div class="page" id="page3">
+ <img src="couple.jpg" alt="Our Love"> 
+<!-- Replace image with your own -->
+ <div class="page" id="page3">
+ <video id="loveVideo" controls autoplay playsinline> 
+<source src="love.mp4" type="video/mp4"> 
+Your browser does not support the video tag.
+ </video>
+<h2>Forever & Always 💍</h2>
+ <p> This moment is just for us ❤️<br> 
+I love you more than words can say 💕 
+</p> 
+</div>
+<h2>Forever & Always 💍</h2>
+ <p> Are you remember your first met date it was 16/03/2025,<br>
+ Today I remember the day when you met first <br>
+ In the first glance my eyes centered on you Your lips smiled ❤️<br><br>
+ I’m so lucky to have you 💕 
+</p> 
+<div class="buttons">
+ <button onclick="showPage('page2')">⬅ Previous</button>
+ <button onclick="showPage('page4')">Next ➡</button> 
+</div>
+</div>
+<div class="page" id="page4">
+ <img src="anbuu.jpg" alt="Our Love"> 
+<!-- Replace image with your own --> <div class="page" id="page3">
+ <video id="loveVideo" controls autoplay playsinline> 
+<source src="love.mp4" type="video/mp4"> 
+Your browser does not support the video tag.
+ </video>
+<h2>Engagement and Marriage 💍</h2>
+ <p> This moment is just for us ❤️<br> 
+I love you more than words can say 💕 
+</p> 
+</div>
+<h2>Engagement and Marriage 💍</h2>
+ <p> May that day was the beginning of an incredible journey together.,<br>
+     the best i ever made before 
+     my love towards you is always remains the same 💕 
+</p> 
+<div class="buttons">
+ <button onclick="showPage('page3')">⬅ Previous</button>
+ <button onclick="showPage('page5')">Next ➡</button> 
+</div>
+</div>  
+</div>
+ <div class="page" id="page5">
+ <img src="memory.jpg" alt="Our Memory">
+<h2>Our Love Story ❤️</h2>
+ <p> Would you remember these one<br>
+ first outing on 16/03/2025 Every laugh, every smile, every memory with you<br> is something I want to keep forever 💖<br><br>
+ You are not just my Valentine,<br>
+ you are my forever 🌹 
+</p>
+<div class="buttons">
+ <button onclick="goPage4()">⬅ Previous</button> 
+<button onclick="goPage6()">Next ➡</button>
+ </div> </div>
+ <div class="page" id="page6"> 
+<img src="your-photo.jpg" alt="Our Memory">
+<h2>Our first Diwali together❤️</h2>
+ <p> 
+Just as the diyas light up the night, you brighten up my life,<br>
+ you brighten up my life 💕<br><br>
+ Thank you for being my Valentine 🌹 
+</p>
+<div class="buttons"> 
+<button onclick="goPage5()">⬅ Previous</button> 
+<button onclick="goPage7()">Next ➡</button>
+ </div>
+ </div> 
+<div class="page" id="page7">
+ <img src="page6-photo.jpg" alt="Our Forever">
+<h2>Our first pongal💍</h2>
+ <p> 
+You're my sweetest blessing this Pongal.
+ and the sunshine in my day.💕 <br>
+ It’s just the beginning of our as forever ❤️<br><br> 
+</p> 
+<div class="buttons">
+ <button onclick="goPage6()">⬅ Previous</button>
+ <button onclick="goPage8()">Next ➡</button>
+ </div> 
+</div>
+<div class="page" id="page8">
+    <img src="page7-photo.jpg" alt="Our Forever"> 
+    <h2>Our Forever Moment ❤️</h2>
+    <p>
+    I want to spend the rest of my life loving you<br>
+    No matter how many months pass, our memories will always feel new and <br>
+    Our journey together is my most precious story. 💕<br>
+    I hold your hand as always as now<br> 
+    This love… this is forever 💍 
+    </p>
+
+    <div class="buttons"> 
+        <button onclick="goPage7()">⬅ Previous</button>
+        <button onclick="showPage('hugPage')">That’s All ✅</button>
+    </div>
+</div>
+<div class="page" id="hugPage">
+    <h1 style="font-size:100px;">🤗</h1>
+    <p style="font-size:24px;">Sending you big hugs 💖</p>
+    <img src="https://media.giphy.com/media/l4FGpP4lxGGgK5CBW/giphy.gif" 
+         alt="Hug GIF" style="width:300px; max-width:90%; border-radius:20px;">
+ <video id="loveVideo" controls autoplay playsinline> 
+<source src="index.mp4" type="index/mp4"> 
+Your browser does not support the video tag.
+ </video>
+    <div class="buttons">
+        <button onclick="showPage('thankYouPage')">Next ➡</button>
+    </div>
+</div>
+<div class="page" id="thankYouPage">
+    <h1 style="font-size:60px;">Thank You 💖</h1>
+    <p style="font-size:24px;">Hope you enjoyed this special Valentine journey! 🌹</p>
+</div>
+
+
+<script>
+function openValentine() {
+    document.getElementById('welcomePage').style.display = 'none';
+    document.getElementById('valentineContent').style.display = 'block';
+    // Show first Valentine page
+    showPage('page1');
+}
+
+/* ---------- Existing Page Functions ---------- */
+function moveNo() {
+    const btn = document.getElementById("noBtn");
+    const x = Math.random() * 200 - 100;
+    const y = Math.random() * 200 - 100;
+    btn.style.transform = `translate(${x}px, ${y}px)`;
+}
+
+function showPage(id) {
+    document.querySelectorAll(".page").forEach(page => {
+        page.style.display = "none";
+    });
+    document.getElementById(id).style.display = "flex";
+}
+
+function goPage2() { showPage("page2"); }
+function goPage3() { showPage("page3"); }
+function goPage4() { showPage("page4"); }
+function goPage5() { showPage("page5"); }
+function goPage6() { showPage("page6"); }
+function goPage7() { showPage("page7"); }
+function goPage8() { showPage("page8"); }
+
+function showEnd() {
+    showPage('endPage');
+}
+function showPage(id) {
+    document.querySelectorAll(".page").forEach(page => {
+        page.style.display = "none"; // hide all pages
+    });
+    document.getElementById(id).style.display = "flex"; // show the selected page
+}
+</script>
+</body>
+</html>
